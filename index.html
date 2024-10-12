@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Personal JL Blog</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">	
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Personal
+  * Updated: Jan 29 2024 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container" >
+	
+	<body>
+<div id="clockdate">
+  <div class="clockdate-wrapper">
+    <div id="clock"></div>
+    <div id="date"></div>
+  </div>
+</div>
+<style>
+@font-face{
+    font-family: 'Digital-7';
+    src:  url('fonts/digital-7.ttf') format('woff2'),   b ,g,mdrx
+    url('digital-7.woff') format('woff');
+}
+.clockdate-wrapper {
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding:10px;
+    max-width:350px;
+    width:100%;
+    text-align:center;
+    border-radius:5px;
+    margin:0 auto;
+  
+}
+#clock{
+    font-family: Digital-7, 'sans-serif';
+    font-size:20px;
+    text-shadow:0px 0px 1px #fff;
+    color:#fff;
+}
+#clock span {
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow:0px 0px 1px #333;
+    font-size:10px;
+    position:relative;
+    top:-5px;
+    left:5px;
+}
+#date {
+    letter-spacing:3px;
+    font-size:10px;
+    font-family:arial,sans-serif;
+    color:#fff;
+}
+</style>
+<script>
+function startTime() {
+    var today = new Date();
+    var hr = today.getHours();
+    var min = today.getMinutes();
+    var sec = today.getSeconds();
+    ap = (hr < 12) ? "<span>AM</span>" : "<span>PM</span>";
+    hr = (hr == 0) ? 12 : hr;
+    hr = (hr > 12) ? hr - 12 : hr;
+    //Add a zero in front of numbers<10
+    hr = checkTime(hr);
+    min = checkTime(min);
+    sec = checkTime(sec);
+    document.getElementById("clock").innerHTML = hr + ":" + min + ":" + sec + " " + ap;
+    
+    var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    var curWeekDay = days[today.getDay()];
+    var curDay = today.getDate();
+    var curMonth = months[today.getMonth()];
+    var curYear = today.getFullYear();
+    var date = curWeekDay+", "+curDay+" "+curMonth+" "+curYear;
+    document.getElementById("date").innerHTML = date;
+    
+    var time = setTimeout(function(){ startTime() }, 500);
+}
+function checkTime(i) {
+    if (i < 10) {
+        i = "0" + i;
+    }
+    return i;
+}
+startTime();
+</script>
+
+<style>
+.fa {
+  font-size: 50px;
+  cursor: pointer;
+  user-select: none;
+}
+.fa:hover {
+  color: darkblue;
+}
+</style>
+
+<i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+
+<script>
+function myFunction(x) {
+  x.classList.toggle("fa-thumbs-down");
+}
+</script>
+
+
+      <h1><a href="index.html">Hi,I am JL Yañez</a></h1>
+      <h2>This is My <span>Blog</span> Website</h2>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link active" href="#header">Home</a></li>
+          <li><a class="nav-link" href="#about">Calendar</a></li>
+          <li><a class="nav-link" href="#biodata">Biodata</a></li>
+          <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <div class="social-links">
+		<ul>
+        <a href="https://www.facebook.com/jyldmnqynz?mibextid=ZbWKwL" class="facebook"><i class="bi bi-facebook"></i></a> 
+		</ul>
+		<ul>
+        <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2F_suupermario%3Figsh%3DMWc5bjh2YTJncXhxaQ%253D%253D%26fbclid%3DIwZXh0bgNhZW0CMTAAAR2OrlhKYiJhJpnp83du2PnIopYTyNUn_l8RyoBEdddmik-_nHaGLycYe2A_aem_AYkQN5niyEwrSmznI9xXX94tfFUP4E1wjjaEdMLGGohUAx1poImzPAQ_6RUU9G9_S7CUS-eS6eJAojtNPJzFJbJm&h=AT2Q6U8Qx9hZHqW7p6lmvv0js6r3DEUejVwzVD_flAzdcsBTKrO4g7kfGG17FQtAni1ruirbDuHZb2_PjMRCrFFO-3sKDxDjRHwr3VOxf2rPOxBA3ClS_Rgn0ZQaIbdwyIU9pg" class="instagram"><i class="bi bi-instagram"></i></a>
+		</ul>
+      </div>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
+
+    <!-- ======= Calendar Me ======= -->
+    <div class="Calendar-me container">
+
+    <body>
+         <div class="wrapper">
+    <div class="container-calendar">
+        <h3 id="monthAndYear"></h3>
+        <div class="button-container-calendar">
+            <button id="previous" onclick="previous()">&#8249;</button>
+            <button id="next" onclick="next()">&#8250;</button>
+        </div>
+        <table class="table-calendar" id="calendar" data-lang="en">
+            <thead id="thead-month"></thead>
+            <tbody id="calendar-body"></tbody>
+        </table>
+        <div class="footer-container-calendar">
+<label for="month">Jump To: </label>
+      <select id="month" onchange="jump()">
+                 <option value=0>Jan</option>
+                 <option value=1>Feb</option>
+                 <option value=2>Mar</option>
+                 <option value=3>Apr</option>
+                 <option value=4>May</option>
+                 <option value=5>Jun</option>
+                 <option value=6>Jul</option>
+                 <option value=7>Aug</option>
+                 <option value=8>Sep</option>
+                 <option value=9>Oct</option>
+                 <option value=10>Nov</option>
+                 <option value=11>Dec</option>
+             </select>
+             <select id="year" onchange="jump()"></select>       
+        </div>
+    </div>
+</div>
+</body>
+<style>
+.wrapper {
+    margin: 15px auto;
+    max-width: 1100px;
+}
+
+.container-calendar {
+    background: #000000;
+    padding: 15px;
+    max-width: 475px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.button-container-calendar button {
+    cursor: pointer;
+    display: inline-block;
+    zoom: 1;
+    background: #00a2b7;
+    color: #fff;
+    border: 1px solid #0aa2b5;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
+.table-calendar {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-calendar td, .table-calendar th {
+    padding: 5px;
+    border: 1px solid #e2e2e2;
+    text-align: center;
+    vertical-align: top;
+}
+
+.date-picker.selected {
+    font-weight: bold;
+    outline: 1px dashed #00BCD4;
+}
+
+.date-picker.selected span {
+    border-bottom: 2px solid currentColor;
+}
+
+/* sunday */
+.date-picker:nth-child(1) {
+  color: red;
+}
+
+/* friday */
+.date-picker:nth-child(6) {
+  color: green;
+}
+
+#monthAndYear {
+    text-align: center;
+    margin-top: 0;
+}
+
+.button-container-calendar {
+    position: relative;
+    margin-bottom: 1em;
+    overflow: hidden;
+    clear: both;
+}
+
+#previous {
+    float: left;
+}
+
+#next {
+    float: right;
+}
+
+.footer-container-calendar {
+    margin-top: 1em;
+    border-top: 1px solid #dadada;
+    padding: 10px 0;
+}
+
+.footer-container-calendar select {
+    cursor: pointer;
+    display: inline-block;
+    zoom: 1;
+    background: #ffffff;
+    color: #585858;
+    border: 1px solid #bfc5c5;
+    border-radius: 3px;
+    padding: 5px 1em;
+}
+</style>
+<script>
+function generate_year_range(start, end) {
+    var years = "";
+    for (var year = start; year <= end; year++) {
+        years += "<option value='" + year + "'>" + year + "</option>";
+    }
+    return years;
+}
+
+today = new Date();
+currentMonth = today.getMonth();
+currentYear = today.getFullYear();
+selectYear = document.getElementById("year");
+selectMonth = document.getElementById("month");
+
+
+createYear = generate_year_range(1970, 2050);
+/** or
+ * createYear = generate_year_range( 1970, currentYear );
+ */
+
+document.getElementById("year").innerHTML = createYear;
+
+var calendar = document.getElementById("calendar");
+var lang = calendar.getAttribute('data-lang');
+
+var months = "";
+var days = "";
+
+var monthDefault = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+var dayDefault = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+if (lang == "en") {
+    months = monthDefault;
+    days = dayDefault;
+} else if (lang == "id") {
+    months = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
+    days = ["Ming", "Sen", "Sel", "Rab", "Kam", "Jum", "Sab"];
+} else if (lang == "fr") {
+    months = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"];
+    days = ["dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"];
+} else {
+    months = monthDefault;
+    days = dayDefault;
+}
+
+
+var $dataHead = "<tr>";
+for (dhead in days) {
+    $dataHead += "<th data-days='" + days[dhead] + "'>" + days[dhead] + "</th>";
+}
+$dataHead += "</tr>";
+
+//alert($dataHead);
+document.getElementById("thead-month").innerHTML = $dataHead;
+
+
+monthAndYear = document.getElementById("monthAndYear");
+showCalendar(currentMonth, currentYear);
+
+
+
+function next() {
+    currentYear = (currentMonth === 11) ? currentYear + 1 : currentYear;
+    currentMonth = (currentMonth + 1) % 12;
+    showCalendar(currentMonth, currentYear);
+}
+
+function previous() {
+    currentYear = (currentMonth === 0) ? currentYear - 1 : currentYear;
+    currentMonth = (currentMonth === 0) ? 11 : currentMonth - 1;
+    showCalendar(currentMonth, currentYear);
+}
+
+function jump() {
+    currentYear = parseInt(selectYear.value);
+    currentMonth = parseInt(selectMonth.value);
+    showCalendar(currentMonth, currentYear);
+}
+
+function showCalendar(month, year) {
+
+    var firstDay = ( new Date( year, month ) ).getDay();
+
+    tbl = document.getElementById("calendar-body");
+
+    
+    tbl.innerHTML = "";
+
+    
+    monthAndYear.innerHTML = months[month] + " " + year;
+    selectYear.value = year;
+    selectMonth.value = month;
+
+    // creating all cells
+    var date = 1;
+    for ( var i = 0; i < 6; i++ ) {
+        
+        var row = document.createElement("tr");
+
+        
+        for ( var j = 0; j < 7; j++ ) {
+            if ( i === 0 && j < firstDay ) {
+                cell = document.createElement( "td" );
+                cellText = document.createTextNode("");
+                cell.appendChild(cellText);
+                row.appendChild(cell);
+            } else if (date > daysInMonth(month, year)) {
+                break;
+            } else {
+                cell = document.createElement("td");
+                cell.setAttribute("data-date", date);
+                cell.setAttribute("data-month", month + 1);
+                cell.setAttribute("data-year", year);
+                cell.setAttribute("data-month_name", months[month]);
+                cell.className = "date-picker";
+                cell.innerHTML = "<span>" + date + "</span>";
+
+                if ( date === today.getDate() && year === today.getFullYear() && month === today.getMonth() ) {
+                    cell.className = "date-picker selected";
+                }
+                row.appendChild(cell);
+                date++;
+            }
+
+
+        }
+
+        tbl.appendChild(row);
+    }
+
+}
+
+function daysInMonth(iMonth, iYear) {
+    return 32 - new Date(iYear, iMonth, 32).getDate();
+}
+</script>
+
+    </div><!-- End Calendar Me -->
+
+
+  </section><!-- End About Section -->
+
+  <!-- ======= biodata Section ======= -->
+  <section id="biodata" class="Biodata">
+    <div class="container">
+
+      <div class="section-title">
+          <p>My Personal Information</span></p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="assets/img/mee.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Jaylou Dominique Imbing Yañez</h3>
+  
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>21</span></li>
+				</ul>
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>March 28, 2003</span></li>
+				</ul>
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>BirthPlace:</strong> <span>Pagadian City, Zamboanga del sur</span></li>
+				 </ul>
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Sex:</strong> <span>Male</span></li>
+                </ul>
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Civil Status:</strong> <span>Single</span></li>
+				  </ul>
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Height:</strong> <span>5'8</span></li>
+				  </ul>
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Weight:</strong> <span>62kg</span></li>
+				  </ul>
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Citizenship:</strong> <span>Filipino</span></li>
+                </ul>
+				<ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Occupation:</strong> <span>Student</span></li>
+                </ul>
+				<ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Religion:</strong> <span>Roman Catholic</span></li>
+                </ul>
+				<ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>yanez282003@gmail.com</span></li>
+                </ul>
+              </div>
+            </div>
+		</div>
+            <center><H1>My Ambition</H1>
+			<ul>
+			</ul>
+			<ul>
+			<p>Career Success, Financial Independence, Personal Growth and Fulfillment, Making a Positive Impact, Family and Relationships, Personal Health and Wellness, Lifelong Learning and Exploration</p></center>
+			</ul>
+			<ul>
+			<center><h1>My Hobby</h1></center>
+			</ul>
+			<ul>
+			<p>My Hobby is playing Airsoft because Airsoft can be a thrilling and engaging hobby. Whether you enjoy the tactical aspects, the physical activity, or the camaraderie of playing with others, there's a lot to appreciate about it.
+	and ofcourse Playing mobile games like Mobile Legends and Call of Duty can be a fun way to relax and unwind. Both games offer different experiences, with Mobile Legends focusing on team-based strategy and MOBA-style gameplay, while Call of Duty provides fast-paced action and first-person shooter mechanics.</p>
+          </div>
+	
+	<h1>Skills</h1>
+		<p>HTML</p>
+	<div class="container">
+	<div class="skills html">100%</div>
+	</div>
+
+		<p>CSS</p>
+	<div class="container">
+	<div class="skills css">100%</div>
+	</div>
+
+		<p>JavaScript</p>
+	<div class="container">
+	<div class="skills js">100%</div>
+	</div>
+
+		<p>PHP</p>
+	<div class="container">
+	<div class="skills php">100	%</div>
+	</div>
+
+  </section><!-- End biodata Section -->
+
+  <!-- ======= Portfolio Section ======= -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Portfolio</h2>
+        <p></p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="portfolio-flters">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-Education">Education</li>
+            <li data-filter=".filter-Work">Work</li>
+			<li data-filter=".filter-Me">Me</li>
+            <li data-filter=".filter-Family">Family</li>
+			<li data-filter=".filter-Friends">Friends</li>
+			<li data-filter=".filter-Airsoft">Airsoft</li>
+			<li data-filter=".filter-MyBike">MyBike</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row portfolio-container">
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-Education">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/pagadian city pilot schooll.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>elementary G1 - G6</h4>
+              <p>Education</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/pagadian city pilot schooll.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="elementary G1 - G6"></a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-Me">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/1.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-Education">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/High School.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>High School G7 - G10</h4>
+              <p>Education</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/High School.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="High School G7 - G10"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-Work">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/city government.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>At Early Age I Work as Messenger at City Government Office to Provide my Education.</h4>
+              <p>Work</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/city government.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="I entered This Work and Help My Family to Pay My Tuition and Make My Own Money."></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-Me">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/2.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-Education">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/senior high.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Senior High G11 - G12</h4>
+              <p>Education</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/senior high.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Senior High G11 - G12"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+		
+		<div class="col-lg-4 col-md-6 portfolio-item filter-Education">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/emcotech.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>College 1Year - 4Year</h4>
+              <p>Education</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/emcotech.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="College 1Year - 4Year"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-Me">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/3.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+		
+		<div class="col-lg-4 col-md-6 portfolio-item filter-Family">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/dady.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>My Dad</h4>
+              <p>Family</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/dady.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="">JAY DONALD C YAÑEZ</a>
+                <a href="https://www.facebook.com/jayd.yanez?mibextid=ZbWKwL" class="facebook"><i class="bi bi-facebook"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+		
+		<div class="col-lg-4 col-md-6 portfolio-item filter-Family">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/mom.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>My Mom</h4>
+              <p>Family</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/mom.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="">LORENA V YAÑEZ</a>
+				<a href="https://www.facebook.com/lorenjay00?mibextid=ZbWKwL" class="facebook"><i class="bi bi-facebook"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+		
+		<div class="col-lg-4 col-md-6 portfolio-item filter-Family">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/kuya.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>My Big Brother</h4>
+              <p>Family</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/kuya.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="">JAY LUTHER I YAÑEZ</a>
+				<a href="https://www.facebook.com/jlcy11?mibextid=ZbWKwL" class="facebook"><i class="bi bi-facebook"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+		
+		<div class="col-lg-4 col-md-6 portfolio-item filter-Family">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/manghud.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>My Little Sister</h4>
+              <p>Family</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/manghud.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="">TRIXCYL JAYNE I YAÑEZ</a>
+				<a href="https://www.facebook.com/trixcyljayne.yanez.5?mibextid=ZbWKwL" class="facebook"><i class="bi bi-facebook"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+		
+		
+		<div class="col-lg-4 col-md-6 portfolio-item filter-Airsoft">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/a.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p>Airsoft</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/a.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""></a>
+				
+              </div>
+            </div>
+          </div>
+        </div>
+		
+		<div class="col-lg-4 col-md-6 portfolio-item filter-Airsoft">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/b.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p>Airsoft</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/b.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""></a>
+				
+              </div>
+            </div>
+          </div>
+        </div>
+		
+		<div class="col-lg-4 col-md-6 portfolio-item filter-Airsoft">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/c.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p>Airsoft</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/c.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""></a>
+				
+              </div>
+            </div>
+          </div>
+        </div>
+		
+		<div class="col-lg-4 col-md-6 portfolio-item filter-Airsoft">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/d.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p>Airsoft</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/d.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""></a>
+				
+              </div>
+            </div>
+          </div>
+        </div>
+		
+		<div class="col-lg-4 col-md-6 portfolio-item filter-Airsoft">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/e.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p>Airsoft</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/e.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""></a>
+				
+              </div>
+            </div>
+          </div>
+        </div>
+		
+		<div class="col-lg-4 col-md-6 portfolio-item filter-Airsoft">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/f.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p>Airsoft</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/f.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""></a>
+				
+              </div>
+            </div>
+          </div>
+        </div>
+		
+		<div class="col-lg-4 col-md-6 portfolio-item filter-Airsoft">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/g.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p>Airsoft</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/g.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""></a>
+				
+              </div>
+            </div>
+          </div>
+        </div>
+		
+		<div class="col-lg-4 col-md-6 portfolio-item filter-Airsoft">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/h.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p>Airsoft</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/h.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""></a>
+				
+              </div>
+            </div>
+          </div>
+        </div>
+		
+		<div class="col-lg-4 col-md-6 portfolio-item filter-Airsoft">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/i.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p>Airsoft</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/i.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""></a>
+				
+              </div>
+            </div>
+          </div>
+        </div>
+		
+		<div class="col-lg-4 col-md-6 portfolio-item filter-Friends">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/aa.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <p>Friend</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/aa.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="">DANNY ROSE BENDANILLO</a>
+                <a href="https://www.facebook.com/warrenbendanillo?mibextid=ZbWKwL" class="facebook"><i class="bi bi-facebook"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+		
+		<div class="col-lg-4 col-md-6 portfolio-item filter-Friends">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/bb.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <p>Friend</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/bb.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="">KRISTOFFERSON BALSAMO</a>
+                <a href="https://www.facebook.com/kris.balsamo.3?mibextid=ZbWKwL" class="facebook"><i class="bi bi-facebook"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+		
+		<div class="col-lg-4 col-md-6 portfolio-item filter-Friends">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/cc.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <p>Friend</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/cc.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="">MARK JEEZREL WAGAS</a>
+                <a href="https://www.facebook.com/deegeemarkskie?mibextid=ZbWKwL" class="facebook"><i class="bi bi-facebook"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+		
+		<div class="col-lg-4 col-md-6 portfolio-item filter-MyBike">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/11.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p>MyBike</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/11.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""></a>
+				
+              </div>
+            </div>
+          </div>
+        </div>
+		
+		<div class="col-lg-4 col-md-6 portfolio-item filter-MyBike">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/22.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p>MyBike</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/22.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""></a>
+				
+              </div>
+            </div>
+          </div>
+        </div>
+		
+		<div class="col-lg-4 col-md-6 portfolio-item filter-MyBike">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/33.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p>MyBike</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/33.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""></a>
+				
+              </div>
+            </div>
+          </div>
+        </div>
+		
+		<div class="col-lg-4 col-md-6 portfolio-item filter-MyBike">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/44.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p>MyBike</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/44.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""></a>
+				
+              </div>
+            </div>
+          </div>
+        </div>
+		
+		<div class="col-lg-4 col-md-6 portfolio-item filter-MyBike">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/55.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p>MyBike</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/55.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""></a>
+				
+              </div>
+            </div>
+          </div>
+        </div>
+		
+		<div class="col-lg-4 col-md-6 portfolio-item filter-MyBike">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/66.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p>MyBike</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/66.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""></a>
+				
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Portfolio Section -->
+
+
+
+
+  <div class="credits">
+    <!-- All the links in the footer should remain intact. -->
+    <!-- You can delete the links only if you purchased the pro version. -->
+    <!-- Licensing information: https://bootstrapmade.com/license/ -->
+    <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/personal-free-resume-bootstrap-template/ -->
+    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
